@@ -1,0 +1,26 @@
+{
+  "name": "piro",
+  "version": "1.0.0",
+  "description": "Remote Raspberry Pi Tool",
+  "main": "index.js",
+  "scripts": {
+    "git-commit": "make git-commit",
+    "git-pull": "make git-pull",
+    "goto-github": "make goto-github"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meg768/piro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meg768/piro/issues"
+  },
+  "homepage": "https://github.com/meg768/piro#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "yargs": "^16.2.0",
+    "yow": "^1.0.108"
+  }
+}
