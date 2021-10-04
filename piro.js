@@ -4,6 +4,9 @@ var fs   = require('fs');
 var path = require('path');
 var args = require('yargs');
 
+/*
+https://swizec.com/blog/making-a-node-cli-both-global-and-local
+*/
 
 class App {
 
@@ -52,7 +55,7 @@ class App {
 	run() {
 
 		try {
-			args.scriptName('remote-pi');
+			args.scriptName('piro');
 			args.usage('Usage: $0 <command>');
 
 			this.loadCommands();  

@@ -1,5 +1,5 @@
 GITHUB_USER=meg768
-GITHUB_PROJECT=piro
+GITHUB_PROJECT=remote-pi
 GITHUB_URL=https://github.com/$(GITHUB_USER)/$(GITHUB_PROJECT)
 
 all:

@@ -1,2 +1,2 @@
-# piro
-Remote Raspberry Pi Tool
+# remotepi
+Toolbox for a remote Raspberry Pi in your network

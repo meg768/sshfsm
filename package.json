@@ -1,12 +1,15 @@
 {
   "name": "piro",
   "version": "1.0.0",
-  "description": "Remote Raspberry Pi Tool",
-  "main": "index.js",
+  "description": "Toolbox for a remote Raspberry Pi in your network",
+  "main": "piro.js",
   "scripts": {
     "git-commit": "make git-commit",
     "git-pull": "make git-pull",
     "goto-github": "make goto-github"
+  },
+  "bin": {
+	"piro": "piro.js"
   },
   "repository": {
     "type": "git",
