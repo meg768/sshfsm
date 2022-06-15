@@ -92,3 +92,6 @@ module.exports = class extends Command {
 
 
 
+
+
+sshfs 3rgw9i@ssh.loopia.se -o allow_other -o default_permissions -o IdentityFile=~/.ssh/instalia  ./foo
