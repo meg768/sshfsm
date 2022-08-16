@@ -1,5 +1,5 @@
 {
-  "name": "piro",
+  "name": "sshfsm",
   "version": "1.0.0",
   "description": "Mount network drives via sshfs",
   "main": "sshfsm.js",
