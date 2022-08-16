@@ -1,26 +1,26 @@
 {
   "name": "piro",
   "version": "1.0.0",
-  "description": "Toolbox for a remote Raspberry Pi in your network",
-  "main": "piro.js",
+  "description": "Mount network drives via sshfs",
+  "main": "sshfsm.js",
   "scripts": {
     "git-commit": "make git-commit",
     "git-pull": "make git-pull",
     "goto-github": "make goto-github"
   },
   "bin": {
-	"piro": "piro.js"
+	"sshfsm": "sshfsm.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/meg768/piro.git"
+    "url": "git+https://github.com/meg768/sshfsm.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/meg768/piro/issues"
+    "url": "https://github.com/meg768/sshfsm/issues"
   },
-  "homepage": "https://github.com/meg768/piro#readme",
+  "homepage": "https://github.com/meg768/sshfsm#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
     "yargs": "^16.2.0",

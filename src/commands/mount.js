@@ -45,7 +45,7 @@ module.exports = class extends Command {
 		});
 	}
 
-	async run() {
+	async run(argv) {
 
 		try {
 			await this.exec('which which');
