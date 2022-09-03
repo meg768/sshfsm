@@ -55,20 +55,19 @@ class App {
 		
 		const mkpath = require('yow/mkpath');
 		const os = require('os');
-		const driveName = `${argv.user}@${argv.host}`;
-		//const driveName = `${argv.host}`;
+        const host = (argv._)[0];
 
-		if (!argv.host) {
+		if (!host) {
 			throw new Error('A host must be specified.');
 		}
 
-		var mountPath = `${os.homedir()}/.sshfs/drives/${driveName}`;
+		var mountPath = `${os.homedir()}/.sshfsm/${host}`;
 
 		// Create directory...
 		mkpath(mountPath);
 
 		var unmountCommand = `umount ${mountPath}`;
-		var mountCommand = `sshfs ${driveName}:${argv.path} ${mountPath} -o volname=${driveName} -o allow_other `;
+		var mountCommand = `sshfs ${argv.user}@${host}:${argv.path} ${mountPath} -o volname=${host} -o allow_other `;
 
 		try {
 			await this.exec(unmountCommand);
@@ -87,11 +86,10 @@ class App {
 
 		try {
 			yargs.scriptName('sshfsm');
-			yargs.usage('Usage: $0 [options]');
+			yargs.usage('Usage: $0 host [options]');
 
 			yargs.help();
 
-            yargs.option('host',   {describe:'Name of host or IP-address', type: 'strig', default:undefined});
             yargs.option('user', {describe:'Username', type: 'strig', default:'root'});
             yargs.option('path', {describe:'Remote location/path on host', type: 'strig', default:'/'});
 			yargs.wrap(null);
